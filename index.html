@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chat App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #chat-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        #chat-messages {
+            border: 1px solid #ccc;
+            padding: 10px;
+            min-height: 200px;
+            max-height: 300px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        /* Style each chat message as a separate element */
+        .chat-message {
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #message {
+            width: 96%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        #send {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 40px;
+        }
+
+        #send:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 5px;
+            color: #777;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="chat-container">
+        <h1>Simple Chat App</h1>
+        <p>More about in docs >> <a href="docs.html">docs.html</a></p>
+
+        <div id="chat-messages"></div>
+        <input type="text" id="message" placeholder="Type your message">
+        <button id="send">Send</button>
+
+        <hr></hr>
+        <div class="footer">
+            <a href="#">Facebook</a>
+            <a href="#">YouTube</a>
+            <a href="#">TikTok</a>
+            <a href="https://lukas-sander.infinityfreeapp.com" target="_blank">Website</a>
+            <br>
+            &copy; 2023 Simple Chat App
+        </div>
+    </div>
+    <script src="chat.js"></script>
+</body>
+
+</html>
